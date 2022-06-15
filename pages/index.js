@@ -48,6 +48,7 @@ export default function Home({ countries }) {
 }
 
 export async function getStaticProps() {
+  
   const { data } = await client.query({
     query: gql`
       query Countries {
@@ -59,7 +60,7 @@ export async function getStaticProps() {
       }
     `,
   });
-
+  console.log('serverstatic', data.countries.slice(0, 1))
   return {
     props: {
       countries: data.countries.slice(0, 4),

@@ -14,3 +14,26 @@ a {
 * {
   box-sizing: border-box;
 }
+
+header {
+  padding: 5px;
+}
+
+ul{
+  /* Enable flex mode. */
+  display: flex; 
+
+  flex-direction: row;
+  
+  /* Spread out the elements inside the header. */
+  justify-content: flex-start;
+
+  /* Align items vertically in the center. */
+  align-items: center;
+  text-decoration: none;
+}
+
+li {
+  margin-left: 5px;
+  margin-right: 10px;
+}

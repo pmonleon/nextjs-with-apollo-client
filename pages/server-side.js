@@ -59,7 +59,7 @@ export async function getServerSideProps() {
       }
     `,
   });
-
+  console.log('server', data.countries.slice(0, 1))
   return {
     props: {
       countries: data.countries.slice(0, 4),
