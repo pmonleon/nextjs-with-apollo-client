@@ -13,7 +13,7 @@ const QUERY = gql`
 
 export default function Countries() {
   const { data, loading, error } = useQuery(QUERY,{
-    fetchPolicy:'network-only'
+    fetchPolicy: 'cache-first'
   });
 
   if (loading) {
